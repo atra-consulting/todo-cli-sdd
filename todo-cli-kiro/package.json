@@ -1,0 +1,24 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "A CLI application for managing todos",
+  "main": "dist/index.js",
+  "bin": {
+    "todo": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "fast-check": "^3.21.0",
+    "memfs": "^4.9.3",
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
+  }
+}
