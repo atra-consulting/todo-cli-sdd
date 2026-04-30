@@ -1,14 +1,12 @@
 # Todo CLI · SDD-Tools im Vergleich
 
-Begleit-Repository zum Blog-Artikel **[Spec-Driven Development in der Praxis: Drei Tools im Vergleich](https://atra-homepage.vercel.app/blog/spec-driven-development-tools)** von Daniel Schock (atra consulting). Theoretische Einordnung im Schwester-Beitrag **[Spec-Driven Development: Das Ende des Vibecodings — oder nur besser verpackte Kontrolle?](https://atra-homepage.vercel.app/blog/spec-driven-development)** von Daniel Wochnik.
-
 Drei aktuelle SDD-Tools — **Spec Kit**, **Kiro** und **GSD** — wurden mit derselben Aufgabe gefüttert: einer **Todo-CLI in TypeScript** mit den Befehlen `add`, `list`, `complete` und `delete`. Jede Session wurde tatsächlich durchgespielt; die Spec-Artefakte und der erzeugte Code liegen 1:1 in den drei Unterprojekten.
 
 ## Die Pointe: Spec-Präzision bestimmt Code-Verhalten
 
 Alle drei Tools haben dasselbe Feature implementiert — und doch unterscheidet sich das Ergebnis. Spec Kit und Kiro bauten einen nicht-reversiblen Status-Übergang (`pending → done`). GSD baute einen **Toggle**, weil das Wort „toggeln" in der Requirements-Checkbox stand.
 
-Gleiches Projekt, gleiches Feature, unterschiedliches Verhalten. Das ist kein Zufall und kein Bug — und der Drift wurde bewusst nicht durch eine Sichtung der generierten Markdown-Specs aufgefangen. Genau diese Pointe diskutiert der [theoretische Beitrag](https://atra-homepage.vercel.app/blog/spec-driven-development#kontrolle-auf-dem-papier-ist-noch-keine-kontrolle-im-alltag) unter dem Stichwort _Kontrolle auf dem Papier ist noch keine Kontrolle im Alltag_.
+Gleiches Projekt, gleiches Feature, unterschiedliches Verhalten. Das ist kein Zufall und kein Bug — und der Drift wurde bewusst nicht durch eine Sichtung der generierten Markdown-Specs aufgefangen. _Kontrolle auf dem Papier ist noch keine Kontrolle im Alltag._
 
 ## Repository-Layout
 
@@ -45,4 +43,4 @@ cd todo-cli-kiro    && npm test  # vitest, inkl. Property-Based Testing via fast
 
 ## Working Notes
 
-[`NOTE.md`](./NOTE.md) enthält die Arbeitsnotizen aus den drei Sessions — was funktioniert hat, was unklar war, welche Artefakte entstanden sind und der gefühlte Aufwand auf einer 1–5-Skala. Roher als die Blog-Fassung, dafür mit den persönlichen Beobachtungen, die im Artikel verdichtet wurden.
+[`NOTE.md`](./NOTE.md) enthält die Arbeitsnotizen aus den drei Sessions — was funktioniert hat, was unklar war, welche Artefakte entstanden sind und der gefühlte Aufwand auf einer 1–5-Skala.
