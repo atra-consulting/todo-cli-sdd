@@ -19,6 +19,6 @@
     "fast-check": "^3.21.0",
     "memfs": "^4.9.3",
     "typescript": "^5.5.2",
-    "vitest": "^1.6.0"
+    "vitest": "^5.0.4"
   }
 }
